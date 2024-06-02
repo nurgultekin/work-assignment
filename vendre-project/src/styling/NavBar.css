@@ -1,0 +1,64 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(107, 221, 173);
+  }
+  
+  .navbar-left {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-center a {
+    margin-right: 20px;
+  }
+  
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu-links > a{
+    padding:20px;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0) ;
+  }
+  
+ 
+  .language-btn {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger-btn {
+    display:none;
+  }
+
+  
+
+
+  

@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import '@fortawesome/fontawesome-free/css/all.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -27,47 +29,119 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100dvw;
+  height: auto;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #5332EE;
+  font-family: "Titan One";
 }
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+
 button {
-  border-radius: 8px;
+  border-radius: 15px;
+  background-color: rgb(91, 238, 169);
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  
+  border: solid 3px #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.card {
-  padding: 2em;
-}
 
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  
 }
+
+
+/*----Navigation Bar---*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(107, 221, 173);
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-center a {
+  margin-right: 20px;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-links > a{
+  padding:20px;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0) ;
+}
+
+
+.language-btn {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  display:none;
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -78,6 +152,40 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #76f8d1;
+    margin: 20px;
   }
+}
+
+@media (max-width: 768px) {
+  
+  .navbar-center
+  .navbar-right {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+  }
+  .menu-links {
+    display:none;
+  }
+  .hamburger-btn {
+    display: block;
+    float:right;
+  }
+
+  .logo {
+
+    font-size: 1.2rem;
+
+  }
+
+  h1 {
+    font-size:1.8rem;
+  }
+
+  .staff-info {
+    text-align:center;
+  }
+
+
 }

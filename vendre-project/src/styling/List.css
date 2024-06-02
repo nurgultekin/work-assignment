@@ -1,0 +1,40 @@
+.staff-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #93c96f;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  
+  .staff-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .staff-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-link {
+    color: rgb(51, 54, 226);
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+    color:rgb(43, 226, 156);
+  }
+  
+  .staff-list {
+
+    max-width: 80%;
+  }

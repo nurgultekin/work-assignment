@@ -183,8 +183,9 @@ button:focus-visible {
     font-size:1.8rem;
   }
 
-  .staff-info {
-    text-align:center;
+  .language-btn
+  .cta-btn {
+    margin: 0px;
   }
 
 

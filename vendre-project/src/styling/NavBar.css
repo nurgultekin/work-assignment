@@ -58,7 +58,16 @@
     display:none;
   }
 
-  
+  @media (max-width: 768px) {
+    .hamburger-btn {
+      display: block;
+    };
+    .language-btn
+    .cta-btn {
+      margin-right: 0px;
+      font-size: 0.5rem;
+    }
+  }
 
 
   

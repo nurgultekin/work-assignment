@@ -3,7 +3,7 @@
     <div class="navbar-left">
       <a href="https://vendre.io" class="logo">Vendre</a>
     </div>
-    <div class="navbar-center">
+    <div class="navbar-right">
       <button class="hamburger-btn" @click="toggleMenu">
         <i class="fas fa-bars"></i>
       </button>

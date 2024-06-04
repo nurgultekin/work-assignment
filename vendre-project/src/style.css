@@ -120,7 +120,7 @@ button:focus-visible {
 
 
 .language-btn {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background-color: transparent;
   border: none;
   margin-right: 20px;
@@ -155,7 +155,8 @@ button:focus-visible {
     background-color: #76f8d1;
     margin: 20px;
   }
-}
+};
+
 
 @media (max-width: 768px) {
   
@@ -186,6 +187,7 @@ button:focus-visible {
   .language-btn
   .cta-btn {
     margin: 0px;
+    font-size: 0.5rem;
   }
 
 

@@ -5,6 +5,7 @@
     border: 1px solid #93c96f;
     border-radius: 0.25rem;
     margin-bottom: 1rem;
+    width: 100%;
   }
   
   .profile-picture {
@@ -36,5 +37,16 @@
   
   .staff-list {
 
-    max-width: 80%;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+
+    .staff-name >p,
+    .staff-card 
+    {
+      width: 60%;
+      font-size: 0.8rem;
+
+    }
   }
